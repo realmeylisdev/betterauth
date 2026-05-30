@@ -29,7 +29,8 @@ jobs:
           channel: stable
           flutter-version: "3.41.1"
 
-      - name: Resolve workspace
+      - name: Install dependencies
+        working-directory: packages/betterauth_flutter
         run: flutter pub get
 
       - name: Verify formatting

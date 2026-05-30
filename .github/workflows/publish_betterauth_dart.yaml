@@ -23,15 +23,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Flutter is needed because the package lives in a pub workspace that
-      # also contains a Flutter package; resolving the workspace requires it.
-      - uses: subosito/flutter-action@v2
+      - uses: dart-lang/setup-dart@v1
         with:
-          channel: stable
-          flutter-version: "3.41.1"
+          sdk: "3.11.0"
 
-      - name: Resolve workspace
-        run: flutter pub get
+      - name: Install dependencies
+        working-directory: packages/betterauth_dart
+        run: dart pub get
 
       - name: Verify formatting
         run: dart format --output=none --set-exit-if-changed packages/betterauth_dart

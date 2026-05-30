@@ -15,7 +15,7 @@ to [Semantic Versioning](https://semver.org) and
   members, invitations and teams, with `Organization`/`Member`/`Invitation`/
   `Team`/`TeamMember` models
 - feat: additional `AuthErrorCode` values for the new plugins
-- chore: the repo now uses Dart pub workspaces
+- chore: link sibling packages from source via `pubspec_overrides.yaml`
 
 ## 0.1.0+1
 

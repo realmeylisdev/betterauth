@@ -1,0 +1,6 @@
+# Resolve the sibling betterauth_dart from source during development and CI.
+# pub ignores pubspec_overrides.yaml when publishing, so the published
+# pubspec.yaml keeps its `betterauth_dart: ^0.2.0` constraint.
+dependency_overrides:
+  betterauth_dart:
+    path: ../betterauth_dart

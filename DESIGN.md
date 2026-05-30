@@ -59,7 +59,7 @@ betterauth/
 | Storage | Persistence | **Pluggable** `AsyncStorage`, `flutter_secure_storage` default |
 | Social | Strategy | **Native idToken** (google_sign_in + sign_in_with_apple) + browser fallback |
 | OAuth | Redirect | **flutter_web_auth_2** (ASWebAuthenticationSession / Custom Tabs) |
-| Bindings | State mgmt | **First-class Bloc** — `AuthCubit` shipped **inside** `betterauth_flutter` |
+| Bindings | State management | **First-class Bloc** — `AuthCubit` shipped **inside** `betterauth_flutter` |
 | Results | Error style | **`Result` / sealed type** (`AuthResult<T>` → `AuthSuccess` / `AuthFailure`) |
 | API | Shape | **Namespaced groups** (`client.signIn.email()`, `client.twoFactor.verifyTotp()`) |
 | Example | Deliverable | **Full demo app** |

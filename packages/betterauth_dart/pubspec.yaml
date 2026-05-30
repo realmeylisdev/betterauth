@@ -14,8 +14,6 @@ topics:
 environment:
   sdk: ^3.11.0
 
-resolution: workspace
-
 dependencies:
   clock: ^1.1.1
   collection: ^1.19.0
@@ -28,7 +26,7 @@ dev_dependencies:
   fake_async: ^1.3.2
   http_mock_adapter: ^0.6.1
   mocktail: ^1.0.5
-  # Lower bound kept compatible with the flutter SDK's pinned test_api so the
-  # pure-Dart core and the Flutter package can share one pub-workspace lockfile.
+  # Lower bound kept compatible with the Flutter SDK's pinned test_api so the
+  # pure-Dart core and the Flutter package stay co-installable from one checkout.
   test: ^1.25.0
   very_good_analysis: ^10.2.0
