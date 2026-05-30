@@ -1,6 +1,6 @@
 name: betterauth_dart
 description: A pure-Dart client SDK for the better-auth authentication server.
-version: 0.2.0+1
+version: 0.2.0
 repository: https://github.com/realmeylisdev/betterauth
 homepage: https://github.com/realmeylisdev/betterauth/tree/main/packages/betterauth_dart
 issue_tracker: https://github.com/realmeylisdev/betterauth/issues

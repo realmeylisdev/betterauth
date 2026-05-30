@@ -1,6 +1,6 @@
 name: betterauth_flutter
 description: Flutter bindings, secure storage, social sign-in and Bloc integration for betterauth_dart.
-version: 0.2.0+1
+version: 0.2.0
 repository: https://github.com/realmeylisdev/betterauth
 homepage: https://github.com/realmeylisdev/betterauth/tree/main/packages/betterauth_flutter
 issue_tracker: https://github.com/realmeylisdev/betterauth/issues
@@ -13,7 +13,7 @@ topics:
 
 environment:
   sdk: ^3.11.0
-  flutter: ^3.41.0
+  flutter: ">=3.41.0"
 
 resolution: workspace
 
