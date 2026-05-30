@@ -15,8 +15,6 @@ environment:
   sdk: ^3.11.0
   flutter: ">=3.41.0"
 
-resolution: workspace
-
 dependencies:
   app_links: ^6.3.2
   betterauth_dart: ^0.2.0

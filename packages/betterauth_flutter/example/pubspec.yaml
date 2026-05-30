@@ -7,8 +7,6 @@ environment:
   sdk: ^3.11.0
   flutter: ^3.41.0
 
-resolution: workspace
-
 dependencies:
   betterauth_flutter: ^0.2.0
   flutter:

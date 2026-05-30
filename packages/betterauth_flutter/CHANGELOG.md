@@ -13,7 +13,7 @@ to [Semantic Versioning](https://semver.org) and
   `AuthCubit.signInAnonymously()`
 - feat: the full organization API is available via
   `BetterAuth.instance.client.organization`
-- chore: the repo now uses Dart pub workspaces
+- chore: link sibling packages from source via `pubspec_overrides.yaml`
 
 ## 0.1.0+1
 

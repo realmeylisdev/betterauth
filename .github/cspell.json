@@ -33,6 +33,9 @@
     "oidc",
     "dartdoc",
     "lcov",
-    "realmeylisdev"
+    "realmeylisdev",
+    "pubspecs",
+    "betterauthexample",
+    "yourdomain"
   ]
 }

@@ -1,0 +1,6 @@
+# Run the example against the local sibling packages instead of pub.dev.
+dependency_overrides:
+  betterauth_flutter:
+    path: ../
+  betterauth_dart:
+    path: ../../betterauth_dart
