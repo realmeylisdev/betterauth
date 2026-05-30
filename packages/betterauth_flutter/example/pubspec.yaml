@@ -1,0 +1,24 @@
+name: betterauth_flutter_example
+description: Demonstrates betterauth_flutter — email, social, OTP and 2FA flows.
+publish_to: none
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.0
+  flutter: ^3.41.0
+
+resolution: workspace
+
+dependencies:
+  betterauth_flutter: ^0.2.0
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^9.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  very_good_analysis: ^10.2.0
+
+flutter:
+  uses-material-design: true

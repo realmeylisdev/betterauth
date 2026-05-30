@@ -1,0 +1,48 @@
+name: publish betterauth_dart
+
+# Tag-triggered publishing to pub.dev via GitHub OIDC (no tokens). Enable
+# "Automated publishing from GitHub Actions" on the betterauth_dart pub.dev
+# admin page with tag pattern `betterauth_dart-v{{version}}`, then push a tag
+# like `betterauth_dart-v0.2.0`. Publish the core BEFORE betterauth_flutter.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+on:
+  push:
+    tags:
+      - "betterauth_dart-v*"
+
+permissions:
+  id-token: write # required for OIDC authentication to pub.dev
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Flutter is needed because the package lives in a pub workspace that
+      # also contains a Flutter package; resolving the workspace requires it.
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          flutter-version: "3.41.1"
+
+      - name: Resolve workspace
+        run: flutter pub get
+
+      - name: Verify formatting
+        run: dart format --output=none --set-exit-if-changed packages/betterauth_dart
+
+      - name: Analyze
+        run: dart analyze packages/betterauth_dart
+
+      - name: Test
+        working-directory: packages/betterauth_dart
+        run: dart test
+
+      - name: Publish
+        working-directory: packages/betterauth_dart
+        run: dart pub publish --force

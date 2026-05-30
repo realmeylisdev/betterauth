@@ -1,0 +1,34 @@
+name: betterauth_dart
+description: A pure-Dart client SDK for the better-auth authentication server.
+version: 0.2.0+1
+repository: https://github.com/realmeylisdev/betterauth
+homepage: https://github.com/realmeylisdev/betterauth/tree/main/packages/betterauth_dart
+issue_tracker: https://github.com/realmeylisdev/betterauth/issues
+topics:
+  - authentication
+  - auth
+  - http
+  - client
+  - sdk
+
+environment:
+  sdk: ^3.11.0
+
+resolution: workspace
+
+dependencies:
+  clock: ^1.1.1
+  collection: ^1.19.0
+  dio: ^5.7.0
+  equatable: ^2.0.7
+  meta: ^1.15.0
+
+dev_dependencies:
+  coverage: ^1.11.0
+  fake_async: ^1.3.2
+  http_mock_adapter: ^0.6.1
+  mocktail: ^1.0.5
+  # Lower bound kept compatible with the flutter SDK's pinned test_api so the
+  # pure-Dart core and the Flutter package can share one pub-workspace lockfile.
+  test: ^1.25.0
+  very_good_analysis: ^10.2.0
